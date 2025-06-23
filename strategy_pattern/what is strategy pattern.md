@@ -1,5 +1,5 @@
 ## Strategy pattern
 Let's say we have a part of our code in our overall flow that dependds on certain factors and the logic in this code can change based on those factors but the result remain in same format. So, the idea here is to have this code separate from the main flow code and based on logic call these code snippets and get needed answer.
 
-# Why do we need it?
+## Why do we need it?
 For example, In ride booking app, we may want to experiment based on matching the riders with customers based on nearest distance, and maybe on their rating and we internally can control how customers get matched with riders. So the overall flow would be- get the riders, prioritize the riders as per our logic, and then match the rider to customer. Now, we can see that the logic of prioritizing drivers can be separted out. If we don't, then we have multiple logic written in our main flow and we will have to put conditions if we want to switch the logic. Also, if we want to add some new logic, we will have to modify the main code flow. So, why not separate the logic of prioritizing riders from the main code?
